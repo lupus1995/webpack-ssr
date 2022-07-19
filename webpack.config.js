@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV === 'development';
-const isProduction = process.env.NODE_ENV = 'production';
+const isProduction = process.env.NODE_ENV === 'production';
 
 /**
  * устанавливаем для разработки два отдельных файла
@@ -19,6 +19,8 @@ if (isDevelopment) {
 if (isProduction) {
     entryFile = 'index.prod.tsx';
 }
+
+console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 
 module.exports = {
     mode: 'development',

@@ -1,5 +1,6 @@
 import React from 'react';
+import Navigation from './Navigation';
 
 export default function App() {
-  return <h1>Hello, world 55!</h1>;
+  return <Navigation />;
 }

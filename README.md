@@ -34,7 +34,7 @@ Project start instructions
 
 Консольные команды для управленя проектом
 
-- npm run start - запускает основной проект frontend в режиме разработи, server side rendering доступен в режиме production;
+- npm run start - запускает основной проект frontend в режиме разработки, server side rendering доступен в режиме production;
 - npm run build - запускает сборку frontend проекта для деплоя на сервер. Содержимое сборки помещается в папку dist;
 - npm run build:dev - запускает сборку сервера express для того чтобы запустить server side rendering для проекта
 - npm run dev - запускает сервер express в режиме server side rendering, перед запуском этой команды необходимо запустить команду npm run build:dev.
