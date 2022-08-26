@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { __RouterContext } from 'react-router';
 
 const Home = () => {
   const [posts, setPosts] = useState<{ title: string }[]>([]);
   useEffect(() => {
-    console.log('posts', posts);
     fetch('http://jsonplaceholder.typicode.com/posts')
       .then((response) => response.json())
       .then(setPosts);
