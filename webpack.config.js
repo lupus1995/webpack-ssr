@@ -8,7 +8,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 /**
  * устанавливаем для разработки два отдельных файла
- * 
+ *
  * для режима development устанавливаем файл index.dev.tsx
  * для режима production устанавливаем файл index.prod.tsx
  */
@@ -59,6 +59,9 @@ module.exports = {
       eslint: {
         enabled: true,
         files: './src/**/*.{ts,tsx,js,jsx}',
+        options: {
+          fix: true,
+        },
       },
       async: true,
       typescript: {
